@@ -137,9 +137,8 @@ main {
 /* Projects */
 
 #projects {
-    height: 700px;
+    height: auto;
     width: 700px;
-    background-color: aliceblue;
     padding: 10px;
 }
 
@@ -148,6 +147,7 @@ main {
     margin: 5px;
     display: flex;
     padding: 10px;
+    background-color: aliceblue;
 }
 
 .project img {
@@ -157,8 +157,7 @@ main {
 }
 
 .project-text {
-    border: 1px solid black;
-    height: 100px;
+    height: auto;
     width: 540px;
     display: flex;
     flex-direction: column;
@@ -166,12 +165,56 @@ main {
 }
 
 .project-text h3{
-    border: 1px solid black;
     margin-bottom: 10px;
     
 }
 
 .project-text p {
-    border: 1px solid black;
     font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
+
+/* Contact */
+
+#contact {
+    height: 300px;
+    width: 700px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact p {
+    font-size: 1.5rem;
+    width: 400px;
+    text-align:center;
+}
+
+#contact ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#contact li{
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    position: relative;
+    top: 4rem;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    margin-top: 1rem;
+}
+
