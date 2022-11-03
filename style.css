@@ -35,8 +35,8 @@ header {
     align-items: center;
     z-index: 100;
     padding: 0 40px;
-    border-bottom: 1px solid gray;
 }
+
 
 header li {
     display: inline;
@@ -46,6 +46,11 @@ header li {
 
 header li a {
     color: white;
+}
+
+header li a:hover {
+    font-size: 1.25rem;
+    box-shadow: 0px 4px rgba(250, 250, 250, 0.3);
 }
 
 /* Main */
@@ -64,6 +69,7 @@ main {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+    margin-top:10px;
 }
 
 .test {
@@ -154,18 +160,28 @@ main {
 
 #projects {
     height: auto;
-    width: 700px;
-    padding: 10px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
 }
 
 .project{
+    width: 700px;
     border: 1px solid black;
     margin: 5px;
     display: flex;
     padding: 10px;
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px black;
+}
+
+.project:hover {
+    width: 740px;
+    box-shadow: 2px 3px black;
 }
 
 .project img {
@@ -222,6 +238,20 @@ main {
     display: inline-block;
     margin-top: 2rem;
     font-size: 1.25rem;
+}
+
+#contact a {
+    border: 1px solid gray;
+    box-shadow: 1px 1px black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+#contact a:hover {
+    padding: 12px;
+    box-shadow: 2px 3px black;
+    border-radius: 10px;
 }
 
 footer {
