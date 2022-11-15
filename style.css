@@ -47,7 +47,8 @@ header {
 
 
 header li {
-    display: inline;
+    /*display: inline;*/
+    display: none;
     margin-left: 1rem;
     font-size: 1.2rem;
     font-family: sans-serif;
@@ -59,6 +60,53 @@ header li a {
 
 header li a:hover {
     font-size: 1.25rem;
+    box-shadow: 0px 4px rgba(250, 250, 250, 0.3);
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0,9);
+    z-index: 1;
+    border-radius: 20px;
+    margin-top: 24px;
+    left: -15px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 0.5rem 10px;
+    display: block;
+    border-radius: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: gray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
     box-shadow: 0px 4px rgba(250, 250, 250, 0.3);
 }
 
