@@ -44,6 +44,7 @@ h3 {
         font-size: 12px;
     }
 }
+
 /* Header */
 
 header {
@@ -143,6 +144,28 @@ header li a {
     
     .dropdown {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        margin-left: 10%;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .dropdown {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    header {
+        margin-left: 1%;
+        width: 98%;
+        border-radius: ;
     }
 }
 
@@ -288,6 +311,38 @@ main {
 
 }
 
+@media only screen and (max-width: 480px) {
+    .hero{
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+    }
+    
+    .hero-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .heroText {
+        position:relative;
+        left: 0%;
+        height: 180px;
+        width: 100%;
+        top:auto;
+    }
+    
+    .pfp {
+        top: -10px;
+}
+
+    .pfp:hover {
+        top: -92px;
+        left: 23px;
+    }
+}
 
 /* Skills */
 
@@ -331,13 +386,28 @@ main {
     font-size: 1.1rem;
 }
 
-@media only screen and (max-width: 637px) {
+@media only screen and (max-width: 734px) {
     #skills {
         height: auto;
         width: 100%;
-        padding: 10px;
+        padding: 30px;
         align-items: center;
       }
+}
+
+@media only screen and (max-width: 480px) {
+    #skills {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .skills-text {
+        max-width: 87%;
+    }
+    
+    .toolbox {
+        max-width: 80%;
+    }
 }
 
 /* Projects */
@@ -447,6 +517,47 @@ main {
     }
 }
 
+@media only screen and (max-width: 480px) {
+    #projects {
+    padding: 20px;
+    }
+
+    .project{
+        width: 100%;/**/
+        border: 1px solid black;
+        border-radius: 20px;
+        margin: 5px;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .projects-text {
+        margin: 20px;
+        padding: 2rem;
+    }
+
+    .project img {
+        height: 300px;
+        width: 300px;
+        margin-right: 0px;
+        border-radius: 20px;
+    }
+
+    .project-text {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .project-text p {
+        font-size: 1.2rem;;
+        line-height: 1.3rem;
+    }
+}
+
 /* Contact */
 
 #contact {
@@ -491,6 +602,30 @@ main {
     box-shadow: 2px 3px black;
     border-radius: 10px;
 }
+
+@media only screen and (max-width: 637px) {
+    #contact {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+   
+    #contact {
+    height: 200px;
+    }
+
+    #contact p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    #contact ul{
+        width: 300px;
+    }
+}
+
+/* Footer */
 
 footer {
     position: relative;
