@@ -124,6 +124,7 @@ header li a {
     box-shadow: 0px 4px 1px 0px #6F7CBD;
 }
 
+
 .dropdown-content a:hover {
     background-color: #6F7CBD;
     box-shadow: 0px 4px 1px 0px #6F7CBD;
@@ -135,6 +136,7 @@ header li a {
 
 .dropdown:hover .dropbtn {
     background-color: #6F7CBD;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 912px) {
@@ -165,7 +167,6 @@ header li a {
     header {
         margin-left: 1%;
         width: 98%;
-        border-radius: ;
     }
 }
 
@@ -247,11 +248,9 @@ main {
     top: -250.2px;
     left: 433px;
     box-shadow: 4px 4px 3px #6F7CBD;
-    background-image: url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/portfolioWebPage/resources/images/pfp.png);
-    background-position: center;
-    background-size: cover;
     border: none;
-}
+    cursor: pointer;
+} 
 
 @media only screen and (max-width: 734px) {
     
@@ -340,8 +339,8 @@ main {
 }
 
     .pfp:hover {
-        top: -92px;
-        left: 23px;
+        top: -10px;
+        left: -7px;
     }
 }
 
