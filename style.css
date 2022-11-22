@@ -61,6 +61,7 @@ header {
     align-items: center;
     z-index: 100;
     padding: 0 40px;
+    transition: top 0.4s;
 }
 
 
@@ -73,6 +74,7 @@ header li {
     padding: 0.5rem 10px;;
     justify-content: center;
     align-items: center;
+    transition: all 0.1s;
 }
 
 header li:hover {
@@ -129,10 +131,10 @@ header li a {
     background-color: #6F7CBD;
     box-shadow: 0px 4px 1px 0px #6F7CBD;
 }
-
+/*
 .dropdown:hover .dropdown-content {
     display: block;
-}
+}*/
 
 .dropdown:hover .dropbtn {
     background-color: #6F7CBD;
@@ -240,6 +242,7 @@ main {
     background-size:cover;
     background-position:center;
     box-shadow: 2px 1px 3px #6F7CBD;
+    transition: all 0.2s;
 }
 
 .pfp:hover {
@@ -432,11 +435,13 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 1px 1px black;
+    transition: all 0.1s;
 }
 
 .project:hover {
-    width: 720px;
-    box-shadow: 2px 3px black;
+    width: 705px;
+    box-shadow: 0px 0px 10px #6F7CBD;
+    border: none;
 }
 
 .projects-text {
@@ -506,7 +511,6 @@ main {
     }
     .project:hover {
         width: 99%;
-        box-shadow: 10px 5px 10px 1px #6F7CBD;
     }
 }
 
@@ -603,6 +607,7 @@ main {
     padding: 10px;
     border-radius: 10px;
     background-color: aliceblue;
+    transition: all 0.1s;
 }
 
 #contact a:hover {
