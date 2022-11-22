@@ -97,7 +97,7 @@ header a {
 /* Hero */
 
 #hero {
-    background-image: url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/nathan-dumlao-6VhPY27jdps-unsplash.jpg);
+    background-image: url(images/nathan-dumlao-6VhPY27jdps-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,7 +133,7 @@ header a {
 }
 
 #events:before {
-    background-image:url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/cyril-saulnier-mpSMThAU4OY-unsplash.jpg);
+    background-image:url(images/cyril-saulnier-mpSMThAU4OY-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -231,7 +231,7 @@ button:active {
     flex-direction: column;
     padding: 0 2%; 
     line-height: 1.5rem;
-    background-image:url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+    background-image:url(images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -80,7 +80,7 @@ header nav li a {
 /* Banner */
 
 .banner {
-    background-image: url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/flexbox-business-site-starting/resources/images/charlotte-noelle-98WPMlTl5xo-unsplash.jpg);
+    background-image: url(images/charlotte-noelle-98WPMlTl5xo-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -243,7 +243,7 @@ header nav li a {
 /* Contact */
 
 .contact {
-    background-image: url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/flexbox-business-site-starting/resources/images/contact/s-o-c-i-a-l-c-u-t-96A9UTFAMUM-unsplash.jpg);
+    background-image: url(images/contact/s-o-c-i-a-l-c-u-t-96A9UTFAMUM-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
