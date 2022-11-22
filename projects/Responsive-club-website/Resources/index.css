@@ -1,0 +1,368 @@
+/* Universal */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    html {
+        font-size: 12px;
+    }
+    
+    header ul {
+        display: none;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: ;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-family: ;    
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: ;    
+}
+
+.container {
+    height: 45rem;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 18rem;
+    max-width: 23rem;
+    margin-right: 10%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: #ac703b;
+    width: 100%;
+    border-bottom: 5px solid #ac703b9e;
+}
+
+header ul {
+    text-decoration: none;
+    word-spacing: 1.5rem;
+}
+
+header li {
+    display: inline;
+    font-size: 1.5rem;
+}
+
+header .logo {
+    color: #ac703b;
+    font-size: 2.5rem;
+}
+
+header a {
+    color: lightgray;
+}
+
+/* Content */
+
+.content {
+    position: relative;
+    top: 5rem;
+}
+
+/* Hero */
+
+#hero {
+    background-image: url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/nathan-dumlao-6VhPY27jdps-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 3px solid black;
+}
+
+#hero .panel {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightgray;
+    min-width: 300px;
+    height: 20rem;
+    position: relative;
+    top: 15rem; 
+    left: 5%;
+    flex-direction: column;
+    border-radius: 50px;
+    line-height: 2rem;
+    row-gap: 2rem;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 4px 4px black;
+}
+
+/* Events */
+
+#events {
+    height: 40rem;
+    position: relative;
+    border-bottom: 3px solid white;
+
+}
+
+#events:before {
+    background-image:url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/cyril-saulnier-mpSMThAU4OY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.5;
+
+
+}
+
+#events .panel {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: lightgray;
+    min-width: 300px;
+    height: 20rem;
+    position: relative;
+    top: 15rem; 
+    left: 5%;
+    flex-direction: column;
+    border-radius: 50px;
+    line-height: 2rem;
+    row-gap: 2rem;
+    font-size: 1.25rem;
+    padding: 0 1rem;
+    text-align: center;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+}
+
+#events .panel h1 {
+    border-bottom: 1px solid gray;
+    position: relative;
+    top: -5px;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#events .panel ul {
+    position: relative;
+    top: -15px;
+}
+
+#events .panel li {
+    line-height: 3rem;
+    text-align: left;
+}
+
+#events button {
+    background-color: #aa662a;
+    padding: .5rem;
+    border: 1px solid white;
+    box-shadow: 1px 1px white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button a {
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;   
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+/* Coffee */
+
+#coffee {
+    height: 45rem;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-bottom: 3px solid white;
+    /*background-image:url(/Users/gcaputo/Documents/Coding/Responsive-club-website/Resources/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);*/
+}
+
+#coffee .sub-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 0;
+}
+
+#coffee .panel {
+    width: 30%; 
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    padding: 0 2%; 
+    line-height: 1.5rem;
+    background-image:url(/Users/gcaputo/Documents/Coding/Projects/Codecademy/Responsive-club-website/Resources/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+#coffee .panel h2 {
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+}
+#coffee .panel p {
+    padding-bottom: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 885px) {
+    #coffee .sub-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        row-gap: 20px;
+    }
+
+    #coffee .panel {
+        width: 100%;
+        min-width: 18rem;
+        max-width: 100%;
+    }
+    
+    #coffee .panel h2 {
+    padding: 3%;
+    }
+    
+    #coffee .panel p {
+    padding-bottom: 3%;
+    }
+
+}
+
+/* Shops */
+
+#shops {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 40rem;
+}
+
+#shops .panel {
+    width: 33%;
+    min-width: 288px;
+    min-height: 288px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 18rem;
+    max-width: 23rem;    
+    margin-right: 0;
+}
+
+#shops .panel img {
+    width: 100%;
+    height: 28rem;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#shops .panel p {
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 885px) {
+    #shops {
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+#shops .panel {
+    width: auto;
+    min-height: 240px;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 448px;    
+    margin-right: 0;
+    margin: 1rem;
+}
+
+#shops .panel img {
+    min-width: 330px;
+    height: 384px;
+    padding: 1rem;
+    padding-bottom: 0;
+}
+
+#shops .panel p {
+    padding: 1rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+    
+}
+
+/*Footer*/
+
+footer {
+    height: 5rem;
+    width: 100%;
+    background-color: #ac703b;
+    color: white;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-top: 1px solid gray;
+}
+
+
