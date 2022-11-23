@@ -41,9 +41,14 @@ let changeColorBack = () => {
     openMenubtn.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
 }
 
+let changeColor = () => {
+    openMenubtn.style.backgroundColor = '#6F7CBD';
+}
+
 hiddenMenu.onmouseover = appearMenu;
 hiddenMenu.onmouseout = disappearMenu;
-openMenubtn.onclick = appearMenu;
+openMenubtn.addEventListener("click", appearMenu, changeColor);
+//openMenubtn.onclick = appearMenu;
 closeMenubtn.addEventListener("click", disappearMenu, changeColorBack);
 //closeMenubtn.onclick = disappearMenu;
 
