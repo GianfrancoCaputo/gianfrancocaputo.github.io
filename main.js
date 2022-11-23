@@ -37,10 +37,16 @@ let disappearMenu = () => {
     hiddenMenuCont.style.display = 'none';
 }
 
+let changeColorBack = () => {
+    openMenubtn.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+}
+
 hiddenMenu.onmouseover = appearMenu;
 hiddenMenu.onmouseout = disappearMenu;
 openMenubtn.onclick = appearMenu;
-closeMenubtn.onclick = disappearMenu;
+closeMenubtn.addEventListener("click", disappearMenu, changeColorBack);
+//closeMenubtn.onclick = disappearMenu;
+
 
 // Current year setter
 const year = document.getElementById('current-year');
