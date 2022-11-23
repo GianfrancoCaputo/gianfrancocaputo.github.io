@@ -229,6 +229,10 @@ main {
     font-size: 1.4rem;
 }
 
+.heroText a {
+    font-weight: 600;
+}
+
 .pfp {
     height: 200px;
     width: 200px;
