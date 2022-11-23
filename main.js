@@ -1,4 +1,4 @@
-// Picture changer
+// To make my picture change when clicked on
 let myPicture = document.querySelector('.pfp');
 let changePicture = function() {
     myPicture.style.backgroundImage = 'url(resources/images/pfp.png)';
@@ -9,7 +9,8 @@ let returnPicture = function() {
 myPicture.onmousedown = changePicture;
 myPicture.onmouseup = returnPicture;
 
-// Disappearing navigation bar 
+
+// To make header/navBar appear/disappear as you scroll 
 let navBar = document.getElementById("navbar");
 let prevScrollpos = window.scrollY;
 let hideNavBar = () => {
@@ -23,6 +24,8 @@ let hideNavBar = () => {
 } 
 window.onscroll = hideNavBar;
 
+
+// To appear/disappear the dropdown menu
 let hiddenMenu = document.getElementsByClassName('dropdown')[0];
 let hiddenMenuCont = document.getElementsByClassName('dropdown-content')[0];
 let hiddenMenubtn = document.getElementsByClassName('dropdown-content')[0].children;
@@ -48,11 +51,9 @@ let changeColor = () => {
 hiddenMenu.onmouseover = appearMenu;
 hiddenMenu.onmouseout = disappearMenu;
 openMenubtn.addEventListener("click", appearMenu, changeColor);
-//openMenubtn.onclick = appearMenu;
 closeMenubtn.addEventListener("click", disappearMenu, changeColorBack);
-//closeMenubtn.onclick = disappearMenu;
 
 
-// Current year setter
+// To automatically update the year on the copyright section in the footer
 const year = document.getElementById('current-year');
 year.innerHTML = new Date().getFullYear();
