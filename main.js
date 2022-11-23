@@ -26,6 +26,8 @@ window.onscroll = hideNavBar;
 let hiddenMenu = document.getElementsByClassName('dropdown')[0];
 let hiddenMenuCont = document.getElementsByClassName('dropdown-content')[0];
 let hiddenMenubtn = document.getElementsByClassName('dropdown-content')[0].children;
+let closeMenubtn = document.getElementById('close-btn');
+let openMenubtn = document.getElementsByClassName('dropbtn')[0];
 
 let appearMenu = () => {
     hiddenMenuCont.style.display = 'block';
@@ -37,6 +39,8 @@ let disappearMenu = () => {
 
 hiddenMenu.onmouseover = appearMenu;
 hiddenMenu.onmouseout = disappearMenu;
+openMenubtn.onclick = appearMenu;
+closeMenubtn.onclick = disappearMenu;
 
 // Current year setter
 const year = document.getElementById('current-year');

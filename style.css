@@ -103,6 +103,27 @@ header li a {
     align-items: center;
 }
 
+#close-btn {
+    position: absolute;
+    top: 15px;
+    left: 90px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 1px 0px #6F7CBD;
+}
+
+#close-btn:hover {
+    background-color: #6F7CBD;
+    cursor: pointer;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -148,6 +169,18 @@ header li a {
     
     .dropdown {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 734px){
+    #close-btn {
+        left: 85px;
+    }
+}
+
+@media only screen and (max-width: 637px){
+    #close-btn {
+        left: 80px;
     }
 }
 
