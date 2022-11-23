@@ -38,7 +38,7 @@ let disappearMenu = () => {
 }
 
 let changeColorBack = () => {
-    openMenubtn.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+    openMenubtn.style.backgroundColor = 'rgba(0, 0, 0, 0)';
 }
 
 let changeColor = () => {

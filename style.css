@@ -162,6 +162,11 @@ header li a {
     cursor: pointer;
 }
 
+@media (hover: none) and (pointer: coarse) {
+    .dropdown:hover .dropbtn {
+        background-color: rgba(0, 0, 0, 0);}
+}
+
 @media only screen and (max-width: 912px) {
     header li{
         display: none;
